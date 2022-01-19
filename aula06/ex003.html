@@ -22,7 +22,8 @@
    <script>
 
        /* CONVERSÃO DE STRING > NUMBER
-       Number.parseInt/Float(n) converte os dados dentro do prompt para números inteiros ou flutuantes;
+
+       Number.parseInt/Float(n), converte os dados dentro do prompt para números inteiros ou flutuantes;
        Number.parseInt/Float(n) > versão completa do comando
        parseInt/Float > usando só o parse;
        Number(n) > versão atual do comando que identifica se o número é inteiro ou quebrado sem precisar específicar;
@@ -45,6 +46,30 @@
        s.toUpperCase() = 'JAVASCRIPT'
        >>> TUDO PARA 'minúsculas'
        s.toLowerCase() = 'javascript'
+       
+       USOS DO NUMBER 
+
+       var n1 = 1545.5
+       >>> .toFixed(), COLOCA O NÚMERO DE CASAS DECIMAIS DESEJADAS 
+       n1.toFixed(2) 
+       '1545.50'
+       > n1.toFixed(2).replace('.', ',') >>> .replace, SUBSTITUÍ UMA COISA POR OUTRA
+       '1545,50'
+       >>> n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+       > string localizada pelo mundo, 'pt-br', localizar para o Brasil, a parte do estilo é o 'currency' que significa dinheiro, e o outro é país desejado.
+       'R$ 1.545,50'
+       n1.toLocaleString('pt-br',{style: 'currency', currency: 'USD'})
+       'US$ 1.545,50' 
+
+       ORDEM DE PRECENDÊNCIA DOS OPERADORES LÓGICOS
+       1° ()
+       2° **
+       3° * / % > começar com que quem aparecer primeiro na conta
+       4° + -
+       DEPOIS DOS ARITMÉTICOS VEM OS RELACIONAIS
+       5° > < >= <= != == ===
+       E POR FIM OS LÓGICOS
+       6° na ordem de ! && ||
        */
 
        var n1 = Number.parseInt(window.prompt('Digite um número: ')) // prompt = string
