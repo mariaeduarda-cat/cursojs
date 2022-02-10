@@ -7,20 +7,24 @@
     <title>Document</title>
     <style>
         body {
-            background-color: lightsalmon;
+            background-color: rgb(82, 98, 241);
             color: white;
-            font: normal 20pt Arial; 
+            font: normal 20pt Arial;
         }
-        h1 {
-            color: rgb(199, 199, 85)
-        }
+
     </style>
 </head>
 <body>
-   <h1>Olá, mundo!</h1>
-   <p>Já me livrei da maldição</p>
+    <h1>Iniciando estudos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong> DOM</strong> em JavaScript.</p>
+    <div id="msg">
+        Clique em mim
+    </div>
    <script>
-     
+       var d = window.document.querySelector('div#msg')
+       d.style.color = 'blue'
+       d.style.background = 'green'
    </script>
 </body>
 </html>
