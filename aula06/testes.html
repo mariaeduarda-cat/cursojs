@@ -6,25 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        body {
-            background-color: rgb(82, 98, 241);
-            color: white;
-            font: normal 20pt Arial;
+        button {
+            font: normal 18px Arial;
+            padding: 30px;
         }
-
     </style>
+    
 </head>
 <body>
-    <h1>Iniciando estudos com DOM</h1>
-    <p>Aqui vai o resultado</p>
-    <p>Aprendendo a usar o <strong> DOM</strong> em JavaScript.</p>
-    <div id="msg">
-        Clique em mim
+    <h1>Boas-Vindas</h1>
+    <div>
+      <button onclick="clicar()">Comprar poduto</button>
     </div>
-   <script>
-       var d = window.document.querySelector('div#msg')
-       d.style.color = 'blue'
-       d.style.background = 'green'
-   </script>
-</body>
+
+    <script>
+        /*function clicar() {
+            var prod = window.prompt('Que produto você está comprando?')
+            var din = Number(window.prompt(`Quanto custa ${prod} que você está comprando?`))
+            var valor = Number(window.prompt(`Qual foi o valor que você deu para pagar ${prod}?`))
+            var troco = valor - din
+
+            window.alert(`Você comprou ${prod} que custou ${din.toLocaleString('pt-br',{style: 'currency', currency: 'BR'})}.<br> Deu ${valor.toLocaleString('pt-br',{style: 'currency', currency: 'BR'})} em dinherio e vai receber ${ troco.toLocaleString('pt-br',{style: 'currency', currency: 'BR'})}<br> Volte Sempre! `)
+        }*/
+        
+    </script>
+
+</body>  
 </html>

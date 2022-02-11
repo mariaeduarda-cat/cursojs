@@ -19,15 +19,57 @@
     </style>
 </head>
 <body>
-    <div id="area" onclick="clicar ()">
+    <div id="area">
         Interaja...
     </div>
 
     <script>
+          var a = window.document.getElementById('area')
+          a.addEventListener('click', clicar)
+          a.addEventListener('mouseenter', entrar)
+          a.addEventListener('mouseout', sair)
+
         function clicar() {
-            var a = window.document.getElementById('area')
             a.innerText = 'Clicou!'
+            a.style.background = 'red';
+        }
+        function entrar() {
+            a.innerText = 'Entrou!'
+        }
+        function sair() {
+            a.innerText = 'Saiu!'
+            a.style.background = 'green';
         }
     </script>
 </body>
 </html>
+
+
+<style>
+    body {
+        font: 12pt Arial;
+    }
+   button {
+        font-size: 12pt;
+        padding: 30px;
+    }
+
+    section {
+        margin-top: 20px;
+    }
+
+</style>
+</head>
+<body>
+<h1>Trabalhando com dados v1.0</h1>
+<button onclick="inicio()">Clique para começar</button>
+<section id="resultado">
+    <p>Aqui vai aparecer o resultado...</p>
+</section>
+<script>
+    function inicio() {
+        let nome = window.prompt('Qual é o seu nome?')
+        let res = window.document.getElementById('resultado')
+        res.innerHTML += `Olá, <strong>${nome}</strong>! É um grande prazer te conhecer! &#x1F596;`
+    }
+</script>
