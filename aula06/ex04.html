@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: lightcoral;
+            font: normal 20pt arial;
+        }
+    </style>
+</head>
+<body>
+
+    <script>
+        window.alert('Olá, vamos ver como fica o seu nome em minúsculas e maiúsculas')
+        var num = Number(window.prompt('Quanto você tem na sua conta??'))
+        /*var nome = window.prompt('Qual o seu nome??')
+        document.write(`Seu nome em <strong>maiúsculas</strong> é ${nome.toUpperCase()}<br/>`)
+        document.write(`Seu nome em <strong>minúsculas</strong> é ${nome.toLowerCase()}</br>`)*/
+        document.write(`${nome}, você tem hoje na sua conta: ${num.toFixed(2).replace('.', ',')} em real seria ${num.toLocaleString('pt-br', {style: 'currency', curreny: 'BRL'})}`)
+    </script>
+</body>
+</html>
