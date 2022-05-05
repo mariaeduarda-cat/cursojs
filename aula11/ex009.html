@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+    <style>
+        body {
+            background-color: lightpink;
+        }
+        #botao {
+            margin-left: 10px;
+            font-weight: bold;
+        }
+        #res {
+            margin-top: 10px;
+        }
+        input#txtnld {
+            width: 110px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sistema de Nacionalidade</h1>
+    De qual país você é: <input type="text" name="txtnld" id="txtnld">
+    <input type="button" value="Verificar" id="botao" onclick="verificar()" onmouseenter="entrar()" onmouseleave="sair()">
+    <div id="res">
+
+    </div>
+
+    <script>
+       function verificar() {
+           var txt = window.document.getElementById('txtnld')
+           var res = window.document.querySelector('div#res')
+           res.innerHTML = `<p>Atualmente você mora no(a)<strong>${txt.value}!!</strong></p>`
+           if (txt.value != "Brasil") {
+               res.innerHTML += "<p>Você é <strong>estrangeiro!!</strong></p>"
+           } else {
+               res.innerHTML += "<p>Você é <strong>brasileiro</strong>!!</p>"
+           }
+       } 
+       function entrar() {
+           var int = window.document.getElementById('botao')
+           int.style.background = 'lightblue'
+       }
+       function sair() {
+           var int2 = window.document.getElementById('botao')
+           int2.style.background = 'white'
+       }
+    </script>
+</body>
+</html>
