@@ -1,18 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script>
-        const canal = 'ola';
-        canal = 'cereja'
-        
-        document.write(canal)
-    </script>
+    <title>Curso javascript</title>
+    <style>
+        /*body {
+            background-color: lightpink;
+        }*/
+    </style>
+    
 </head>
 <body>
+    <script>
+        /*window.alert("Seja Bem Vindo ao Sistema de Notas!!");
+        var nome = window.prompt("Digite seu nome: ");
+        var nota = window.prompt(`Olá ${nome}, digite sua nota: `);
+        var res;
+        
+         if(nota>=60) {
+             if(nota>90) {
+                 res = `Caro(a) ${nome}, a sua nota foi de ${nota}, você está <h1 style='color:green'>Aprovado com louvor</h1>`;
+             } else {
+                 res = `Caro(a) ${nome}, a sua nota foi de ${nota}, você está <strong>Aprovado</strong`;
+             }   
+         } else if(nota>=40) {
+            res = `Caro(a) ${nome}, a sua nota foi de ${nota}, você está em <strong>Recuperação</strong`;
+         } else {
+             if(nota<=20) {
+                 res = `Caro(a) ${nome}, a sua nota foi de ${nota}, você está <strong>Reprovado com louvor</strong`;
+             } else {
+            res = `Caro(a) ${nome}, a sua nota foi de ${nota},você está <strong>Reprovado</strong`;
+            }
+         }
+
+         document.write(res);*/
+
+         var aluno = prompt("Nome do(a) aluno");
+  var nota = prompt("Qual sua Nota?");
+  //var nota = 65;
+  var resp;
+
+  if(nota >= 60){ // aprovado
+   if(nota >= 80){ // se maior ou igual a 80
+    resp = "Você foi<h1 style='color:blue'> Aprovado</h1> com louvor, Parabéns";
+   }else{ // se maior ou igual a 60 e menor que 80
+    resp = "Você foi<h1 style='color:blue'> Aprovado</h1>, Parabéns";
+   }
+  }else if(nota >=50){//se menor que 60
+
+   resp = "Você ficou em <h1 style='color:green'>Recuperação</h1> da matéria, sinto muito";
+
+  }else{
+   if(nota >= 40){
     
+    resp = "Você foi<h1 style='color:orange'> Reprovado</h1>, por nota baixa, Estude mais";
+   }else{
+    resp = "Você foi <h1 style='color:#ff0000'>Reprovado</h1>, por nota nuito baixa, Estude mais"; 
+   }
+
+  }
+  document.write(aluno + resp);
+</script>
+<div>
+  <h2>Critérios de notas</h2>
+  <label>Apartir de 60 pontos - Aprovado</label><br>
+  <label>Acima de 80 pontos - Aprovado com louvor</label><br>
+  <label style="color:green">Entre 50 e 59 pontos - Em recuperação</label><br>
+  <label style="color:orange">Entre 40 e 49 pontos - Reprovado</label><br>
+  <label style="color:#ff0000">E menos de 40 pontos - Reprovado com nota baixissima</label>
+ </div>
+
+    </script>
 </body>
-</html>
+</html> 
