@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Curso javascript</title>
     <style>
-        /*body {
+         body {
             background-color: lightpink;
-        }*/
+         }
     </style>
     
 </head>
@@ -36,42 +36,7 @@
          }
 
          document.write(res);*/
-
-         var aluno = prompt("Nome do(a) aluno");
-  var nota = prompt("Qual sua Nota?");
-  //var nota = 65;
-  var resp;
-
-  if(nota >= 60){ // aprovado
-   if(nota >= 80){ // se maior ou igual a 80
-    resp = "Você foi<h1 style='color:blue'> Aprovado</h1> com louvor, Parabéns";
-   }else{ // se maior ou igual a 60 e menor que 80
-    resp = "Você foi<h1 style='color:blue'> Aprovado</h1>, Parabéns";
-   }
-  }else if(nota >=50){//se menor que 60
-
-   resp = "Você ficou em <h1 style='color:green'>Recuperação</h1> da matéria, sinto muito";
-
-  }else{
-   if(nota >= 40){
-    
-    resp = "Você foi<h1 style='color:orange'> Reprovado</h1>, por nota baixa, Estude mais";
-   }else{
-    resp = "Você foi <h1 style='color:#ff0000'>Reprovado</h1>, por nota nuito baixa, Estude mais"; 
-   }
-
-  }
-  document.write(aluno + resp);
-</script>
-<div>
-  <h2>Critérios de notas</h2>
-  <label>Apartir de 60 pontos - Aprovado</label><br>
-  <label>Acima de 80 pontos - Aprovado com louvor</label><br>
-  <label style="color:green">Entre 50 e 59 pontos - Em recuperação</label><br>
-  <label style="color:orange">Entre 40 e 49 pontos - Reprovado</label><br>
-  <label style="color:#ff0000">E menos de 40 pontos - Reprovado com nota baixissima</label>
- </div>
-
+         
     </script>
 </body>
 </html> 
