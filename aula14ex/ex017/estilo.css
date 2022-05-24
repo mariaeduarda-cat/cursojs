@@ -1,6 +1,6 @@
 body {
-    background-color: rgb(35, 35, 255);
-    font: normal 15pt Arial;
+    background-color: rgba(234, 137, 234, 0.86);
+    font: normal 10pt Verdana;
 }
 
 header {
@@ -8,6 +8,16 @@ header {
     text-align: center;
 
 }
+
+select {
+    overflow: hidden;
+    padding: 5px; 
+    background-color: rgba(204, 79, 175, 0.679);   
+    color: black;
+    font-size: medium;
+    border-radius: 10px;
+}
+
 
 section {
     background-color: white;

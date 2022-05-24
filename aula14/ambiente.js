@@ -1,7 +1,7 @@
 console.log("TABUADA")
 
 for (var cont = 1; cont < 10; cont++) {
-    console.log(`${6} x ${cont} = ${6 * cont}` )
+    console.log(`${7} x ${cont} = ${7 * cont}` )
 }
 console.log("Fim")
 
