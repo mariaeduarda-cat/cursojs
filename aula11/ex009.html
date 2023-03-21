@@ -34,7 +34,7 @@
            var txt = window.document.getElementById('txtnld')
            var res = window.document.querySelector('div#res')
            res.innerHTML = `<p>Atualmente você mora no(a)<strong>${txt.value}!!</strong></p>`
-           if (txt.value != "Brasil") {
+           if (txt.value != 'Brasil' || txt.value != 'brasil') {
                res.innerHTML += "<p>Você é <strong>estrangeiro!!</strong></p>"
            } else {
                res.innerHTML += "<p>Você é <strong>brasileiro</strong>!!</p>"
