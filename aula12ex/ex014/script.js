@@ -3,7 +3,13 @@ function carregar() {
     var img = window.document.getElementById("imagem")
     var data = new Date()
     var hora = data.getHours() 
-    msg.innerHTML = `Agora são ${hora} horas.`
+    var minuto = data.getMinutes();
+    var tempo = setInterval(carregar, 1000);
+    msg.innerHTML = `Agora são ${hora}:${minuto}
+    `
+    if(minuto < 10) {
+        minuto = '0' + minuto;
+    }
 
     if(hora >= 0 && hora < 12) {
         //BOM DIA!
