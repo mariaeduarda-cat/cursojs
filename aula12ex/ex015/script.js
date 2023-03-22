@@ -43,7 +43,7 @@ function verificar() {
             }
         }
         res.style.textAlign = 'center'
-        res.innerHTML = `Detectamos ${genero} com ${idade} anos.`
+        res.innerHTML =  `Detectamos um${(genero == 'mulher') ? 'a' : ' '} ${genero} de ${idade} ano${(idade > 1) ? 's' : ' '}.`
         res.appendChild(img)
     }
 
