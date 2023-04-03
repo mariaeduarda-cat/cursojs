@@ -1,6 +1,7 @@
+var tab = document.querySelector("select#seltab")
+
 function tabuada() {
     var num = document.querySelector("input#txtn")
-    var tab = document.querySelector("select#seltab")
 
     if(num.value.length == 0) {
         window.alert("Por favor digite um número!")
@@ -17,4 +18,8 @@ function tabuada() {
         }
     }
     
+}
+
+function limpar() {
+    tab.innerHTML = '<option>Digite outro valor</option>'
 }
