@@ -1,26 +1,41 @@
- let num = [5, 8, 9, 2, 3]
-num[5] = 6
-num.push(7)
-num.sort()
-
-console.log(`Nosso vetor é o ${num} e seu tamanho é ${num.length}`)
-console.log(`O primeiro valor do vetor é ${num[0]}`) 
-let pos = num.indexOf(4)
-if(pos == -1) {
-    console.log('O valor não foi encontrado')
-} else {
-   console.log(`O valor está na posição ${pos}`)  
+/* function parimp(n) {
+    if(n % 2 == 0) {
+        return 'par'
+    } else {
+        return 'impar'
+    }
 }
 
+var res = parimp(5)
+console.log(res) */
 
-/* let valores = [5, 6, 3, 7, 3, 2, 8]
+/* function soma(n1 = 0, n2=0) {
+    return n1 + n2
+}
+console.log(soma(2)) */
 
- for(let pos = 0; pos < valores.length; pos++) {
-    console.log(`A posição ${pos} tem o valor ${valores[pos]}`)
-} 
+/* var v = function(x) {
+    return x*2
+}
 
-for(let pos in valores) {
-    console.log(valores[pos])
-} */
+console.log(v(5)) */
 
+/* function fatorial(n) {
+    var fat = 1
+    for(var c = n; c > 1; c--) {
+        fat *= c
+    }
+    return fat
+}
 
+console.log(fatorial(5)) */
+
+function fatorial(n) {
+    if(n == 1) {
+        return 1
+    } else {
+        return n * fatorial(n-1)
+    }
+}
+
+console.log(fatorial(5))
